@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clube Ouro Verde - Ciências e Biodiversidade</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-logo header-logo-left">
+                <img src="logo-colegio.png" alt="Logo Colégio Estadual do Campo Professor Eugênio de Almeida">
+            </div>
+
+            <div class="header-content">
+                <h1 class="header-title">CLUBE OURO VERDE</h1>
+                <p class="header-subtitle">Clube de Ciências</p>
+                <p class="header-info">COLÉGIO ESTADUAL DO CAMPO PROFESSOR EUGÊNIO DE ALMEIDA</p>
+                <p class="header-info">SÃO MATEUS DO SUL • PARANÁ</p>
+            </div>
+
+            <div class="header-logo header-logo-right">
+                <img src="Logo do clube sem nome do colégio .png" alt="Logo Clube Ouro Verde">
+            </div>
+        </div>
+    </header>
+
+    <!-- NAVEGAÇÃO -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <ul class="nav-menu">
+                <li class="nav-item active"><a href="#inicio" class="nav-link">🏠 INÍCIO</a></li>
+                <li class="nav-item"><a href="#quem-somos" class="nav-link">QUEM SOMOS</a></li>
+                <li class="nav-item"><a href="#historia" class="nav-link">HISTÓRIA</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">PROJETOS</a>
+                    <span class="dropdown-arrow">▼</span>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">ERVA-MATE</a>
+                    <span class="dropdown-arrow">▼</span>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link">PRODUTOS</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">DIVULGAÇÃO CIENTÍFICA</a></li>
+                <li class="nav-item"><a href="#galeria" class="nav-link">GALERIA</a></li>
+                <li class="nav-item"><a href="#equipe" class="nav-link">EQUIPE</a></li>
+                <li class="nav-item"><a href="#contato" class="nav-link">CONTATO</a></li>
+                <li class="nav-item search"><a href="#" class="nav-link">🔍</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- BANNER PRINCIPAL / SLIDER -->
+    <section class="banner" id="inicio">
+        <div class="banner-container">
+            <div class="banner-content">
+                <h2 class="banner-title">Pesquisa, Ciência e<br>Conservação da Natureza</h2>
+                <p class="banner-text">Estudantes pesquisando, aprendendo e transformando conhecimento em soluções para a vida e para o planeta.</p>
+                <a href="#projetos" class="banner-btn">
+                    <span class="btn-icon">🔍</span> CONHEÇA NOSSOS PROJETOS
+                </a>
+            </div>
+            <div class="banner-slider">
+                <div class="slide active" style="background-image: url('Foto\ de\ Rosana\ Lara.jpg')"></div>
+                <div class="slide" style="background-image: url('IMG_4467.JPG')"></div>
+                <div class="slide" style="background-image: url('IMG_4475.JPG')"></div>
+            </div>
+            <div class="slider-dots">
+                <span class="dot active" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO ESTATÍSTICAS -->
+    <section class="stats">
+        <div class="stats-container">
+            <div class="stat-card">
+                <div class="stat-icon">🌿</div>
+                <h3 class="stat-number">30+</h3>
+                <p class="stat-label">PROJETOS<br>DESENVOLVIDOS</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">🧪</div>
+                <h3 class="stat-number">100+</h3>
+                <p class="stat-label">EXPERIMENTOS<br>REALIZADOS</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">👥</div>
+                <h3 class="stat-number">15</h3>
+                <p class="stat-label">FEIRAS E EVENTOS<br>PARTICIPADOS</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">🌍</div>
+                <h3 class="stat-number">5000+</h3>
+                <p class="stat-label">VISITANTES<br>NO PORTAL</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">📚</div>
+                <h3 class="stat-number">10+</h3>
+                <p class="stat-label">PRODUTOS E MATERIAIS<br>DESENVOLVIDOS</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO PRINCIPAIS PROJETOS -->
+    <section class="projetos" id="projetos">
+        <div class="projetos-header">
+            <h2 class="section-title">NOSSOS PRINCIPAIS PROJETOS</h2>
+            <div class="title-decoration">🌿</div>
+        </div>
+
+        <div class="projetos-grid">
+            <!-- Card 1 -->
+            <div class="projeto-card">
+                <div class="projeto-image" style="background-image: url('IMG-20250812-WA0069.jpg')">
+                    <div class="projeto-overlay"></div>
+                </div>
+                <div class="projeto-info">
+                    <h3 class="projeto-title">Pesquisa com Erva-Mate</h3>
+                    <p class="projeto-description">Estudos sobre biodiversidade, química, solos e inovação relacionados à erva-mate.</p>
+                    <a href="#" class="projeto-link">SAIBA MAIS</a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="projeto-card">
+                <div class="projeto-image" style="background-image: url('IMG_4471.JPG')">
+                    <div class="projeto-overlay"></div>
+                </div>
+                <div class="projeto-info">
+                    <h3 class="projeto-title">Produtos Desenvolvidos</h3>
+                    <p class="projeto-description">Geleias, tereré, alimentos e outros produtos desenvolvidos a partir de frutos nativos.</p>
+                    <a href="#" class="projeto-link">SAIBA MAIS</a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="projeto-card">
+                <div class="projeto-image" style="background-image: url('IMG_4475.JPG')">
+                    <div class="projeto-overlay"></div>
+                </div>
+                <div class="projeto-info">
+                    <h3 class="projeto-title">Divulgação Científica</h3>
+                    <p class="projeto-description">Folders, cartilhas, vídeos e materiais didáticos produzidos para levar ciência à comunidade.</p>
+                    <a href="#" class="projeto-link">SAIBA MAIS</a>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="projeto-card">
+                <div class="projeto-image" style="background-image: url('Foto\ de\ Rosana\ Lara\(4\).jpg')">
+                    <div class="projeto-overlay"></div>
+                </div>
+                <div class="projeto-info">
+                    <h3 class="projeto-title">Nossa Equipe</h3>
+                    <p class="projeto-description">Estudantes, professores e parceiros que fazem a ciência acontecer todos os dias.</p>
+                    <a href="#" class="projeto-link">SAIBA MAIS</a>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="projeto-card">
+                <div class="projeto-image" style="background-image: url('IMG_4497.JPG')">
+                    <div class="projeto-overlay"></div>
+                </div>
+                <div class="projeto-info">
+                    <h3 class="projeto-title">Feiras e Eventos</h3>
+                    <p class="projeto-description">Participação em feiras, mostras e eventos científicos regionais e nacionais.</p>
+                    <a href="#" class="projeto-link">SAIBA MAIS</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <h2 class="footer-title">CLUBE OURO VERDE</h2>
+            <p class="footer-text">Colégio Estadual do Campo Professor Eugênio de Almeida</p>
+            <p class="footer-text">São Mateus do Sul • Paraná</p>
+        </div>
+    </footer>
+
+    <script>
+        let currentSlideIndex = 0;
+
+        function currentSlide(n) {
+            showSlide(currentSlideIndex = n);
+        }
+
+        function showSlide(n) {
+            const slides = document.querySelectorAll('.slide');
+            const dots = document.querySelectorAll('.dot');
+            
+            if (n >= slides.length) {
+                currentSlideIndex = 0;
+            }
+            if (n < 0) {
+                currentSlideIndex = slides.length - 1;
+            }
+            
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            slides[currentSlideIndex].classList.add('active');
+            dots[currentSlideIndex].classList.add('active');
+        }
+
+        // Auto-advance slides a cada 5 segundos
+        setInterval(() => {
+            currentSlideIndex++;
+            showSlide(currentSlideIndex);
+        }, 5000);
+    </script>
+
+</body>
+
+</html>
